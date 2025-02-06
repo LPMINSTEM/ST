@@ -36,5 +36,16 @@
 
     </main>
     <button id="backToTop" onclick="scrollToTop()">🔝</button>
-
+    <script>
+        const defaultTitle = document.title;
+    
+        window.addEventListener("blur", () => {
+          document.title = "Come Back! 🚀";
+        });
+        
+        window.addEventListener("focus", () => {
+          document.title = defaultTitle;
+        });
+        
+            </script>
 </body>
