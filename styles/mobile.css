@@ -110,5 +110,21 @@
     background: linear-gradient(45deg, #00c6ff, #007bff);
   }
   
-
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    transition: top 0.3s;
+  }
+  
+  .hidden {
+    top: -60px;
+  }
+  
   
