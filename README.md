@@ -35,7 +35,7 @@ The goal of this project is to **enhance science education** and encourage curio
 ## 📞 Connect With Me  
 
 - 🌐 **GitHub:** [@tssejed](https://github.com/tssejed)  
-- 📷 **Instagram:** [@lpm_music_club](https://www.instagram.com/lpm_music_club/)  
+- 📷 **Instagram:** [@col.sejed.official](https://www.instagram.com/col.sejed.official/)  
 - 💬 **WhatsApp:** [Contact Me](https://wa.me/21694155000)  
 
 ---
