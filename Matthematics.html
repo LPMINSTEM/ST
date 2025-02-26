@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPM IN STEM</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="shortcut icon" href="assets/icons/icon.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo-btn">LPM IN STEM</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+        </ul>
+    </nav>
+
+    <main class="coming-soon">
+        <div class="content">
+            <h1 id="typewriter">🚀 Coming Soon!</h1>
+            <p>We're working hard to bring you an amazing STEM experience. Stay tuned!</p>
+            
+            </div>
+        </div>
+    </main>
+    <button id="backToTop" onclick="scrollToTop()">🔝</button>
+    <script>
+        const defaultTitle = document.title;
+    
+        window.addEventListener("blur", () => {
+          document.title = "Come Back! 🚀";
+        });
+        
+        window.addEventListener("focus", () => {
+          document.title = defaultTitle;
+        });
+        
+            </script>
+</body>
+</html>

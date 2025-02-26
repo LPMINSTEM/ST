@@ -1,0 +1,9 @@
+/* Dark theme styles */
+
+:root {
+  --primary-blue: #121212;
+  --text-primary: #fff;
+  --accent-teal: #64ffda;
+  --background-primary: #1a202c;
+  --background-secondary: #2d3748;
+}

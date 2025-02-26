@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology 🐋 - LPM IN STEM</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="shortcut icon" href="assets/icons/icon.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo-btn">LPM IN STEM</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="Science.html" class="nav-link">🧪 Explore Science</a></li>
+            <li><a href="Psychology.html" class="nav-link">🧠 Discover Psychology</a></li>
+
+        </ul>
+    </nav>
+
+    <main class="content-page">
+        <!-- Video Section -->
+
+
+        <!-- Blog Section -->
+        <h1 id="typewriter" class="h2">Marine Biology 🐋</h1>
+        <article class="blog-post" style="text-align: center;">
+            <h2> L’océan, un monde à découvrir et à protéger ! 🦑🔬</h2>
+            <img src="canva-embed/index.html/1.png" alt="Science Blog Image" class="blog-image">
+            <div class="blog-text">
+                <a href="https://www.instagram.com/p/DGLxrJjudtw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==?embed=true" class="cta">Read More</a>
+               <div class="blog-text">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/3Y53Ji0z1b7pgQ7TxVHbT9?utm_source=generator&t=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>            </div>
+        </article>
+        
+
+
+    </main>
+    <button id="backToTop" onclick="scrollToTop()">🔝</button>
+    <script>
+        let lastScrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  let navbar = document.querySelector(".navbar");
+  if (window.scrollY > lastScrollY) {
+    navbar.classList.add("hidden"); // Hide navbar when scrolling down
+  } else {
+    navbar.classList.remove("hidden"); // Show navbar when scrolling up
+  }
+  lastScrollY = window.scrollY;
+});
+    const defaultTitle = document.title;
+
+    window.addEventListener("blur", () => {
+      document.title = "Come Back! 🚀";
+    });
+    
+    window.addEventListener("focus", () => {
+      document.title = defaultTitle;
+    });
+    
+    </script>
+</body>
+</html>
