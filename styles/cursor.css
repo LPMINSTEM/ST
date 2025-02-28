@@ -36,3 +36,19 @@
         transform: scale(1);
     }
 }
+.hidden {
+    top: -60px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00c6ff;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0a192f;
+}

@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="styles/cursor.css">
+    <link rel="stylesheet" href="styles/scrollbar.css">
     <link rel="shortcut icon" href="assets/icons/icon.png" type="image/x-icon">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -24,6 +26,7 @@
          
         </ul>
     </nav>
+    <main class="content-page">
 
     <div class="custom-cursor"></div>
     <div class="cursor-trail"></div>
@@ -56,6 +59,44 @@
         </div>
     </section>
 
+    </main>
+    
+
     <button id="backToTop" onclick="scrollToTop()">🔝</button>
-    <script src="cursor-costum.js"></script></body>
+    <script src="cursor-costum.js"></script>
+    <script>
+        // Theme Toggle Function
+        function toggleTheme() {
+    document.body.classList.toggle('light-theme');
+    const toggleBtn = document.querySelector('.theme-toggle i');
+    toggleBtn.classList.toggle('fa-moon');
+    toggleBtn.classList.toggle('fa-sun');
+}
+
+// Dynamic Hover Effects
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('mouseenter', () => {
+        link.style.color = '#64ffda';
+    });
+    link.addEventListener('mouseleave', () => {
+        link.style.color = '#ccd6f6';
+    });
+});
+
+// Logo Button Interaction
+document.querySelector('.logo-btn').addEventListener('click', () => {
+    window.location.href = 'index.html';
+});
+const defaultTitle = document.title;
+
+window.addEventListener("blur", () => {
+document.title = "Come Back! 🚀";
+});
+
+window.addEventListener("focus", () => {
+document.title = defaultTitle;
+});
+
+</script>
+</body>
 </html>
