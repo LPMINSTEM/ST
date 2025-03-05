@@ -44,7 +44,6 @@ body {
 .hero {
     text-align: center;
     padding: 4rem 5%;
-    background: linear-gradient(to right, var(--primary-blue), var(--secondary-blue));
 }
 
 .hero h1 {
@@ -85,6 +84,18 @@ body {
     text-decoration: none;
     font-weight: 600;
 }
+.cta:hover{
+    background:#0c1c336b;
+    color: var(--accent-teal);
+    transition: all;
+}
+
+.cta:hover::before {
+    opacity: 0;
+}
+.cta:hover::after {
+    opacity: 1;
+}
 .ctb{
     display: inline-block;
     padding: 0.8rem 1.5rem;
@@ -92,6 +103,11 @@ body {
     border-radius: 5px;
     text-decoration: none;
     font-weight: 600;
+}
+.ctb:hover{
+    background: var(--accent-teal);
+    color: var(--primary-blue);
+    transition: all;
 }
 
 /* Responsive Design */
@@ -679,3 +695,16 @@ body {
 .social-links a:hover {
     background: #F39C12;
 }
+div.scroll-container {
+    background-color: var(--primary-blue);
+    border: 2px solid var(--accent-teal);
+    border-radius: 10px;
+    height: auto;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+  div.scroll-container img {
+    padding: 10px;
+  }

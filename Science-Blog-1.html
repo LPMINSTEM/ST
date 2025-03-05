@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révolution Scientifique - LPM IN STEM</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="shortcut icon" href="assets/icons/icon.png" type="image/x-icon">
+<body>
+    <nav class="main-nav">
+        <div class="logo-btn">
+            <div class="logo-btn">LPM IN STEM</div>
+        </div>        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="Science.html" class="nav-link">🧪 Explore Science</a></li>
+            <li><a href="Biology.html" class="nav-link">🐋 Discover Marine Biology</a></li>
+            <li><a href="Contact-us.html" class="nav-link">📲 Contact Us</a></li>
+
+
+        </ul>
+    </nav>
+
+    <main class="content-page">
+
+
+
+        <article class="blog-post" style="text-align: center;">
+            <h2 style="text-align: center;">🔬✨ Aujourd’hui marque le début d’une révolution scientifique : l’ouverture de notre tout premier domaine entièrement dédié à la recherche, à l’innovation et à la découverte ! 🏛️💡</h2>
+            <div class="scroll-container">
+                <img src="assets/images/472456853_1632838490654723_8060691279747171043_n.jpeg" alt="Cinque Terre" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <img src="assets/images/a.jpeg" alt="Northern Lights" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <img src="assets/images/1.jpg" alt="Mountains" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <img src="assets/images/2.jpg" alt="Mountains" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <img src="assets/images/3.jpg" alt="Mountains" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <img src="assets/images/4.jpg" alt="Mountains" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <style>
+                    .full-screen-img {
+
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 1000;
+                    }
+                    .full-screen-img img {
+                        max-width: 90%;
+                        max-height: 90%;
+                    }
+                    .full-screen-img:hover {
+                        cursor: pointer;
+                    }
+                </style>
+                
+                <div id="fullScreenImg" class="full-screen-img" onclick="closeFullScreen()">
+                    <img src="" alt="Full Screen Image">
+                </div>
+                
+                <script>
+                    function openFullScreen(src) {
+                        const fullScreenImg = document.getElementById('fullScreenImg');
+                        fullScreenImg.style.display = 'flex';
+                        fullScreenImg.querySelector('img').src = src;
+                    }
+                    
+                    function closeFullScreen() {
+                        document.getElementById('fullScreenImg').style.display = 'none';
+                    }
+                    
+                    document.querySelectorAll('.scroll-container img').forEach(img => {
+                        img.addEventListener('click', () => openFullScreen(img.src));
+                    });
+                </script>
+              </div>
+            <div class="blog-text">
+                <a href="https://www.instagram.com/p/DFp2Bj6sj5h/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="cta">View on Instagram</a>
+                <a href="https://www.facebook.com/share/p/1DurVB5MLT/" class="cta">View on Facebook</a>
+        </article>
+    </main>
+    <button id="backToTop" onclick="scrollToTop()">🔝</button>
+    <script src="cursor-costum.js"></script>
+    <script>
+        const defaultTitle = document.title;
+    
+        window.addEventListener("blur", () => {
+          document.title = "Come Back! 🚀";
+        });
+        
+        window.addEventListener("focus", () => {
+          document.title = defaultTitle;
+        });
+        
+            </script>
+</body>
+</html>

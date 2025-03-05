@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marine Biology 🐋 - LPM IN STEM</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="shortcut icon" href="assets/icons/icon.png" type="image/x-icon">
+<body>
+    <nav class="main-nav">
+        <div class="logo-btn">
+            <div class="logo-btn">LPM IN STEM</div>
+        </div>        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="Science.html" class="nav-link">🧪 Explore Science</a></li>
+            <li><a href="Biology.html" class="nav-link">🐋 Discover Marine Biology</a></li>
+            <li><a href="Contact-us.html" class="nav-link">📲 Contact Us</a></li>
+
+
+        </ul>
+    </nav>
+
+    <main class="content-page">
+
+
+
+        <article class="blog-post" style="text-align: center;">
+            <h2 style="text-align: center;">L’océan, un monde à découvrir et à protéger ! 🦑🔬</h2>
+            <div class="scroll-container">
+                <img src="canva-embed/index.html/1.png" alt="Cinque Terre" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <img src="assets/images/Snapinsta.app_479696686_17854467036387443_3455175266922311674_n_1080.jpg" alt="Northern Lights" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <img src="assets/images/Snapinsta.app_480639734_17854467054387443_5987543971585794634_n_1080.jpg" alt="Mountains" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <img src="assets/images/sss.jpg" alt="Mountains" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <img src="assets/images/Snapinsta.app_479695149_17854467072387443_2700845435370154550_n_1080.jpg" alt="Mountains" width="auto" height="auto" style="max-width: 50%; height: auto;">
+                <style>
+                    .full-screen-img {
+
+                        position: fixed;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        display: none;
+                        justify-content: center;
+                        align-items: center;
+                        z-index: 1000;
+                    }
+                    .full-screen-img img {
+                        max-width: 90%;
+                        max-height: 90%;
+                    }
+                    .full-screen-img:hover {
+                        cursor: pointer;
+                    }
+                </style>
+                
+                <div id="fullScreenImg" class="full-screen-img" onclick="closeFullScreen()">
+                    <img src="" alt="Full Screen Image">
+                </div>
+                
+                <script>
+                    function openFullScreen(src) {
+                        const fullScreenImg = document.getElementById('fullScreenImg');
+                        fullScreenImg.style.display = 'flex';
+                        fullScreenImg.querySelector('img').src = src;
+                    }
+                    
+                    function closeFullScreen() {
+                        document.getElementById('fullScreenImg').style.display = 'none';
+                    }
+                    
+                    document.querySelectorAll('.scroll-container img').forEach(img => {
+                        img.addEventListener('click', () => openFullScreen(img.src));
+                    });
+                </script>
+              </div>
+            <div class="blog-text">
+                <a href="https://www.instagram.com/p/DGLxrJjudtw/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==?embed=true" class="cta">View on Instagram</a>
+                <a href="https://www.facebook.com/share/p/19y5BeXeA3/" class="cta">View on Facebook</a>
+        </article>
+    </main>
+    <button id="backToTop" onclick="scrollToTop()">🔝</button>
+    <script src="cursor-costum.js"></script>
+    <script>
+        const defaultTitle = document.title;
+    
+        window.addEventListener("blur", () => {
+          document.title = "Come Back! 🚀";
+        });
+        
+        window.addEventListener("focus", () => {
+          document.title = defaultTitle;
+        });
+        
+            </script>
+</body>
+</html>
